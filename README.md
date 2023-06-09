@@ -1,2 +1,2 @@
 # Back-End-Pyton
- meus projetos de esudo Python para Back End
+ meus projetos de estudo Python para Back End

@@ -4,7 +4,7 @@ from datetime import datetime
 
 class Dbase:
     def __init__(self):
-       self._conector = mysql.connector.connect(user='nome', host='seuhost', password='senha', database='bancodedados')
+       self._conector = mysql.connector.connect(user='root', host='127.0.0.1', password='', database='tarefas')
 
     def insert(self, n, d, h):
         a = self._conector
@@ -52,9 +52,5 @@ class Atarefado:
         self.tarefas.delete(d)
 
 
-
-tarefa = Atarefado(Dbase())
-#tarefa.adicionar('lavar a louça')
-#tarefa.mostar()
-#tarefa.remover(4)
-
+test = Atarefado(Dbase)
+test.adicionar('aprender ingles')
